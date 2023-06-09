@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './DogNav.css';
+import './Nav.css';
 
-function Nav({ dogs }) {
+function DogNav({ dogs }) {
     return (
         <nav className='nav'>
             <ul className='nav-list'>
@@ -21,4 +21,4 @@ function Nav({ dogs }) {
     );
 }
 
-export default Nav;
+export default DogNav;

@@ -3,7 +3,7 @@ import './DogDetails.css'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DogList from './DogList';
 import DogDetails from './DogDetails';
-import Nav from './DogNav';
+import DogNav from './DogNav';
 import duke from "./duke.jpg";
 import whiskey from "./whiskey.jpg";
 import perry from "./perry.jpg";
@@ -12,9 +12,9 @@ import tubby from "./tubby.jpg";
 function App(props) {
   return (
     <BrowserRouter>
-      <Nav dogs={props.dogs}/>
+      <DogNav dogs={props.dogs} />
       <Routes>
-        
+
         <Route
           path='/dogs/:name'
           element={<DogDetails dogs={props.dogs} />} >
@@ -23,8 +23,7 @@ function App(props) {
           path='/dogs'
           element={<DogList dogs={props.dogs} />} >
         </Route>
-
-
+        
       </Routes>
     </BrowserRouter>
   );
