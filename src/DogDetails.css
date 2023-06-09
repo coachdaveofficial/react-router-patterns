@@ -1,0 +1,10 @@
+.dog-details {
+    margin: 20px;
+    width: 300px;
+    height: auto;
+    border: 2px solid black;
+}
+
+.dog-details p {
+    margin-left: 10px;
+}
